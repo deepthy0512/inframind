@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Autonomous IT</title>
+    </head>
+    <body style="margin: 0px;padding: 0px;background: linear-gradient(90deg, rgba(6,190,182,1) 17%, rgba(72,177,191,1) 90%);;">
+        <div style="display: flex;align-items: center;justify-content: center;width: 100%;">
+            <div style="display: flex;width: 80%;background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);flex-direction: column;margin-top: 40px;">
+        
+                <div style="display: flex;justify-content:center;align-items:center;flex-direction: column;">
+                    <div style="height: 60px;background-color: rgb(241, 241, 241);font-family: Arial, Helvetica, sans-serif;width:100%;">
+                        <div style="display: flex;align-items:center;padding-left: 50px;">
+                            <p style="font-size: 18px;">Autonomous IT using AWS Cloud Formation</p>
+                        </div>
+
+                    </div>
+                    <form action="stack" method="POST">
+                    <div style="display: flex;flex-direction: column;padding-left: 50;align-items: center;justify-content:flex-start;">
+                        <div style="display: flex;flex-direction: column;margin-top: 10px;">
+                            <p style="font-family: Arial, Helvetica, sans-serif;">Specify the parameters to configure cloud details</p>
+                        </div>
+                        <div style="display: flex;flex-direction:row;margin-top: 20px;align-items: center;">
+                            <div style="width: 400px;">
+                                <label style="font-family: Arial, Helvetica, sans-serif;color: rgb(80, 80, 80);">Stack Name</label>
+                            </div>
+                            <input type="text" name="stackName" style="height: 40px;width: 500px;background-color: rgba(230, 230, 230, 0.507);border: none;border-bottom: black;">
+                            
+                        </div>
+                        
+                        <div style="display: flex;flex-direction:row;margin-top: 20px;align-items: center;">
+                            <div style="width: 400px;">
+                                <label style="font-family: Arial, Helvetica, sans-serif;color: rgb(80, 80, 80);">Existing Key Pair Name Value</label>
+                            </div>
+                            <input type="text" name="keyPairNameValue" style="height: 40px;width: 500px;background-color: rgba(230, 230, 230, 0.507);border: none;border-bottom: black;">
+                            
+                        </div>
+                        <div style="display: flex;flex-direction:row;margin-top: 20px;align-items: center;">
+                            <div style="width: 400px;">
+                                <label style="font-family: Arial, Helvetica, sans-serif;color: rgb(80, 80, 80);">Instance Type</label>
+                            </div>
+                            <input type="text" name="instanceType" style="height: 40px;width: 500px;background-color: rgba(230, 230, 230, 0.507);border: none;border-bottom: black;">
+                            
+                        </div>
+                        <div style="display: flex;flex-direction:row;margin-top: 20px;align-items: center;">
+                            <div style="width: 400px;">
+                                <label style="font-family: Arial, Helvetica, sans-serif;color: rgb(80, 80, 80);">DataBase Name</label>
+                            </div>
+                            <input type="text" name="databaseName" style="height: 40px;width: 500px;background-color: rgba(230, 230, 230, 0.507);border: none;border-bottom: black;">
+                            
+                        </div>
+                        <div style="display: flex;flex-direction:row;margin-top: 20px;align-items: center;">
+                            <div style="width: 400px;">
+                                <label style="font-family: Arial, Helvetica, sans-serif;color: rgb(80, 80, 80);">Database User</label>
+                            </div>
+                            <input type="text" name="databaseUser" style="height: 40px;width: 500px;background-color: rgba(230, 230, 230, 0.507);border: none;border-bottom: black;">
+                            
+                        </div>
+                        <div style="display: flex;flex-direction:row;margin-top: 20px;align-items: center;">
+                            <div style="width: 400px;">
+                                <label style="font-family: Arial, Helvetica, sans-serif;color: rgb(80, 80, 80);">Database Password</label>
+                            </div>
+                            <input type="password" name="databasePassword" style="height: 40px;width: 500px;background-color: rgba(230, 230, 230, 0.507);border: none;border-bottom: black;">
+                            
+                        </div>
+                        <div style="display: flex;flex-direction:row;margin-top: 20px;align-items: center;">
+                            <div style="width: 400px;">
+                                <label style="font-family: Arial, Helvetica, sans-serif;color: rgb(80, 80, 80);">Database Root Password</label>
+                            </div>
+                            <input type="password" name="databaseRootPassword" style="height: 40px;width: 500px;background-color: rgba(230, 230, 230, 0.507);border: none;border-bottom: black;">
+                            
+                        </div>
+                        <div style="display: flex;flex-direction:row;margin-top: 20px;align-items: center;">
+                            <div style="width: 400px;">
+                                <label style="font-family: Arial, Helvetica, sans-serif;color: rgb(80, 80, 80);">SSH Location</label>
+                            </div>
+                            <input type="text" name="SSHLocation" style="height: 40px;width: 500px;background-color: rgba(230, 230, 230, 0.507);border: none;border-bottom: black;">
+                        </div>
+                        <div>
+                            <input type="submit" value="Create Stack" style="color:white;margin:20px;height: 40px;padding:0px 40px;background: linear-gradient(90deg, rgba(6,190,182,1) 17%, rgba(72,177,191,1) 90%);border: none;">
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+
+<html>
+    <head>
+        <title>Autonomous IT</title>
+    </head>
+    <body style="margin: 0px;padding: 0px;background: linear-gradient(90deg, rgba(6,190,182,1) 17%, rgba(72,177,191,1) 90%);;">
+        <div style="display: flex;align-items: center;justify-content: center;width: 100%;">
+            <div style="display: flex;width: 80%;background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);flex-direction: column;margin-top: 40px;">
+        
+                <div style="display: flex;justify-content:center;align-items:center;flex-direction: column;">
+                    <div style="height: 60px;background-color: rgb(241, 241, 241);font-family: Arial, Helvetica, sans-serif;width:100%;">
+                        <div style="display: flex;align-items:center;padding-left: 50px;">
+                            <p style="font-size: 18px;">Autonomous IT using AWS Cloud Formation</p>
+                        </div>
+
+                    </div>
+                    <form action="stack" method="POST">
+                    <div style="display: flex;flex-direction: column;padding-left: 50;align-items: center;justify-content:flex-start;">
+                        <div style="display: flex;flex-direction:row;margin-top: 20px;align-items: center;">
+                            <div style="width: 400px;">
+                                <label style="font-family: Arial, Helvetica, sans-serif;color: rgb(80, 80, 80);">Stack Id</label>
+                            </div>
+                            <label style="height: 40px;width: 500px; border: none;border-bottom: black;">{{stackId}}</label>
+                        </div>
+                        
+                        <div style="display: flex;flex-direction:row;margin-top: 20px;align-items: center;">
+                            <div style="width: 400px;">
+                                <label style="font-family: Arial, Helvetica, sans-serif;color: rgb(80, 80, 80);">Stack Name</label>
+                            </div>
+                            <label style="height: 40px;width: 500px; border: none;border-bottom: black;">{{stackName}}</label>
+                        </div>
+                        <div style="display: flex;flex-direction:row;margin-top: 20px;align-items: center;">
+                            <div style="width: 400px;">
+                                <label style="font-family: Arial, Helvetica, sans-serif;color: rgb(80, 80, 80);">Creation Time</label>
+                            </div>
+                            <label style="height: 40px;width: 500px; border: none;border-bottom: black;">{{creationTime}}</label>
+                        </div>
+                        <div style="display: flex;flex-direction:row;margin-top: 20px;align-items: center;">
+                            <div style="width: 400px;">
+                                <label style="font-family: Arial, Helvetica, sans-serif;color: rgb(80, 80, 80);">Stack Status</label>
+                            </div>
+                            <label style="height: 40px;width: 500px; border: none;border-bottom: black;">{{stackStatus}}</label>
+                        </div>
+                        <div style="display: flex;flex-direction:row;margin-top: 20px;align-items: center;">
+                            <div style="width: 400px;">
+                                <label style="font-family: Arial, Helvetica, sans-serif;color: rgb(80, 80, 80);">Stack Status Reason</label>
+                            </div>
+                            <label style="height: 40px;width: 500px; border: none;border-bottom: black;">{{stackStatusReason}}</label>
+                        </div>
+                        <div style="display: flex;flex-direction:row;margin-top: 20px;align-items: center;">
+                            <div style="width: 400px;">
+                                <label style="font-family: Arial, Helvetica, sans-serif;color: rgb(80, 80, 80);">Request Id</label>
+                            </div>
+                            <label style="height: 40px;width: 500px; border: none;border-bottom: black;">{{requestId}}</label>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
